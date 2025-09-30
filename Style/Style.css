@@ -14,6 +14,10 @@ body {
 h1, h2, h3 {
     color: #2F281E;
 }
+a {
+    color: #000;
+    font-weight: 700;
+}
 img {
     max-width: 100%;
 }
@@ -153,10 +157,11 @@ header .Container {
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
+    margin-bottom: 50px;
 }
 .Welcome__title {
     width: 500px;
-    font-size: 73px;
+    font-size: 70px;
     margin-bottom: 35px;
 }
 .Welcome__subtitle {
@@ -174,5 +179,32 @@ header .Container {
     margin-bottom: 10px;
 }
 
+    /* Audience */
 
-
+.Audience {
+    background: #F2F2F2;
+}
+.Audience__element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    padding: 50px 0;
+}
+.Audience__header span {
+    width: 120px;
+    height: 8px;
+    background: #3A5AFF;
+    border-radius: 3px;
+}
+.Audience__content {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+.Audience__item {
+    width: 200px;
+}
+.Audience__item > * {
+    margin-bottom: 20px;
+}
