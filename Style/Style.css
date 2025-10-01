@@ -10,7 +10,6 @@ body {
     font-family: "Montserrat", sans-serif;
     color: #544837;
     overflow-x: hidden;
-    height: 5000px;
 }
 h1, h2, h3 {
     color: #2F281E;
@@ -67,7 +66,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 25px;
+    font-size: 20px;
     padding: 50px 0;
 }
 .Section-block span {
@@ -214,6 +213,7 @@ header .Container {
 
 .Courses__swiper {
     height: 390px;
+    margin-bottom: 50px;
 }
 .Courses .swiper-wrapper {
     padding-top: 30px;
@@ -295,3 +295,49 @@ header .Container {
     color: #333333;
     margin-bottom: 20px;
 }
+
+    /* Code */
+
+.Code__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 700px;
+    background: #FFC43B;
+}
+.Code__game-code {
+    text-align: center;
+    color: #979797;
+}
+.Code__game-code .Logo{
+    margin-bottom: 30px;
+}
+.Code__input {
+    max-width: 100%;
+    position: relative;
+}
+.Code__input input {
+    max-width: 370px;
+    width: 370px;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+
+    border-radius: 50px;
+    border: 0;
+    font-size: 17px;
+    font-weight: 700;
+    color: #979797;
+}
+.Code__game-code svg {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+.Code__footer a {
+    color: blue;
+    text-decoration: underline;
+}
+
