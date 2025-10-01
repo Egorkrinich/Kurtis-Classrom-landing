@@ -26,3 +26,13 @@ document.addEventListener('click', (e) => {
     }
   })
 })
+
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 2,
+  centeredSlides: true,
+  initialSlide: 1,
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});

@@ -10,6 +10,7 @@ body {
     font-family: "Montserrat", sans-serif;
     color: #544837;
     overflow-x: hidden;
+    height: 5000px;
 }
 h1, h2, h3 {
     color: #2F281E;
@@ -61,6 +62,19 @@ button {
 .Outline-button {
     border: 1px solid #979797;
     color: #979797;
+}
+.Section-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    padding: 50px 0;
+}
+.Section-block span {
+    width: 120px;
+    height: 8px;
+    background: #3A5AFF;
+    border-radius: 3px;
 }
 
     /* Header */
@@ -184,19 +198,6 @@ header .Container {
 .Audience {
     background: #F2F2F2;
 }
-.Audience__element {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 25px;
-    padding: 50px 0;
-}
-.Audience__header span {
-    width: 120px;
-    height: 8px;
-    background: #3A5AFF;
-    border-radius: 3px;
-}
 .Audience__content {
     display: flex;
     gap: 100px;
@@ -206,5 +207,91 @@ header .Container {
     width: 200px;
 }
 .Audience__item > * {
+    margin-bottom: 20px;
+}
+
+    /* Courses */
+
+.Courses__swiper {
+    height: 390px;
+}
+.Courses .swiper-wrapper {
+    padding-top: 30px;
+}
+.Courses__item {
+    max-width: 630px;
+    height: 310px;
+    margin: 0 auto;
+    padding: 70px 40px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    color: #fff;
+    box-shadow: 0 0 10px #000;
+}
+.Courses__item-label {
+    width: 60px;
+    padding: 10px 10px;
+
+    background: #333333;
+    box-sizing: border-box;
+    border-radius: 35px;
+}
+.Courses__item-title {
+    width: 400px;
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.Courses__item-subtitle {
+    width: 200px;
+    margin-bottom: 50px;
+}
+.Courses__item a {
+    color: #fff;
+}
+.Courses__item-1 { background: url(../Image/Courses/Courses-1.png);}
+.Courses__item-2 { background: url(../Image/Courses/Courses-2.png);}
+
+.Courses__item-3 { 
+    background: url(../Image/Courses/Courses-3.png);
+    padding-block: 40px;
+}
+.Courses__item-3 .Courses__item-title {
+    width: 400px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+.Courses__item-3 .Courses__item-subtitle {
+    color: #333333;
+    width: 250px;
+    margin-bottom: 20px;
+}
+.Courses__item-3 a {
+    color: #333333;
+}
+
+.Courses__item-4 { 
+    background: url(../Image/Courses/Courses-4.png);
+    padding-block: 40px;
+}
+.Courses__item-4 .Courses__item-label {
+    background: #FFA602;
+}
+.Courses__item-4 .Courses__item-subtitle{
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+.Courses__item-5 { 
+    background: url(../Image/Courses/Courses-5.png);
+    padding-block: 40px;
+}
+.Courses__item-5 .Courses__item-label {
+    background: #028282;
+}
+.Courses__item-5 .Courses__item-title,
+.Courses__item-5 .Courses__item-subtitle,
+.Courses__item-5 a {
+    color: #333333;
     margin-bottom: 20px;
 }
