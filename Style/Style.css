@@ -341,3 +341,23 @@ header .Container {
     text-decoration: underline;
 }
 
+    /* Process */
+
+.Process__item {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-bottom: 50px;
+}
+.Process__item-title {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.Process__item-text {
+    font-size: 20px;
+    width: 350px;
+    padding-block: 50px;
+}
+.Process .Container :nth-child(2) {
+    flex-direction: row-reverse;
+}
