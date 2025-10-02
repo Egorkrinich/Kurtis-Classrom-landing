@@ -361,3 +361,117 @@ header .Container {
 .Process .Container :nth-child(2) {
     flex-direction: row-reverse;
 }
+
+    /* Customers */
+
+.Customers {
+    height: 600px;
+    background: #3A5AFF;
+}
+.Customers__header .Customers__title {
+    color: #fff;
+}
+.Customers__header span {
+    background: #fff;
+}
+.Customer {
+    display: flex;
+
+    max-width: 1400px;
+    height: 320px;
+    margin: 0 auto;
+
+    box-sizing: border-box;
+}
+.Customer__feedback {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+    max-width: 700px;
+    width: 700px;
+    padding: 0 20px;
+
+    border-right: 2px solid #fff;
+    position: relative;
+}
+.Customer__bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 110px;
+    
+    width: 450px;
+    height: 100px;
+
+    background: #fff;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    z-index: 5;
+}
+.Customer__bubble::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ffffff;
+    bottom: -10px;
+    right: 50px;
+}
+.Customer__avatar {
+    margin-left: auto;
+    position: relative;
+}
+.Customer__avatar::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ffffff;
+    top: 50px;
+    left: 30px;
+}
+.Customer__Review {
+    max-width: 700px;
+    width: 700px;
+    height: 100%;
+    padding: 25px 50px;
+
+    border-left: 2px solid #fff;
+    box-sizing: border-box;
+}
+.Customer__name,
+.Customer__position {
+    display: inline;
+    color: #fff;
+    font-weight: 600;
+}
+.Customer__info span {
+    display: inline-block;
+    width: 2px;
+    height: 15px;
+    background: #fff;
+}
+.Customer__info {
+    margin-bottom: 20px;
+}
+.Customer__text p {
+    margin-bottom: 20px;
+}
+.Customers .swiper-wrapper {
+    height: 400px;
+}
+.Customers .swiper-pagination-bullet {
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    opacity: 1;
+}
+.Customers .swiper-pagination-bullet-active {
+    background: #FFC43B;
+}

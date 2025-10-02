@@ -27,12 +27,17 @@ document.addEventListener('click', (e) => {
   })
 })
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.Courses__swiper', {
   slidesPerView: 2,
   centeredSlides: true,
   initialSlide: 1,
 
   pagination: {
-    el: '.swiper-pagination',
+    el: '.Courses-pagination',
   },
 });
+const swiper2 = new Swiper('.Customers__swiper', {
+  pagination: {
+    el: '.Customers-pagination'
+  }
+})
