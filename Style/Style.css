@@ -475,3 +475,32 @@ header .Container {
 .Customers .swiper-pagination-bullet-active {
     background: #FFC43B;
 }
+
+    /* Learning */
+
+.Learning__header {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding: 50px 0;
+}
+.Learning__header-item {
+    width: 190px;
+    padding-inline: 10px;
+    font-weight: 800;
+}
+.Learning__header :nth-child(1) {border-left: 3px solid #3A5AFF;}
+.Learning__header :nth-child(2) {border-left: 3px solid #3CC5FF;}
+.Learning__header :nth-child(3) {border-left: 3px solid #FF3B53;}
+.Learning__header :nth-child(4) {border-left: 3px solid #FFC43B;}
+
+.Learning__content {
+    display: flex;
+    justify-content: space-around;
+
+}
+.Learning__title {
+    width: 600px;
+    font-size: 70px;
+    margin-bottom: 50px;
+}
