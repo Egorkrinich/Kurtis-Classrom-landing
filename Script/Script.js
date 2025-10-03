@@ -35,6 +35,17 @@ const swiper = new Swiper('.Courses__swiper', {
   pagination: {
     el: '.Courses-pagination',
   },
+  breakpoints: {
+    1400: {
+      slidesPerView: 2,
+    },
+    1000: {
+      slidesPerView: 1.5,
+    },
+    400: {
+      slidesPerView: 1
+    }
+  }
 });
 const swiper2 = new Swiper('.Customers__swiper', {
   pagination: {
