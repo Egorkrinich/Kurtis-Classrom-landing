@@ -504,3 +504,63 @@ header .Container {
     font-size: 70px;
     margin-bottom: 50px;
 }
+
+    /* Footer */
+
+footer {
+    padding: 50px 0;
+    background: #3A5AFF;
+}
+.Footer__content {
+    display: flex;
+    gap: 100px;
+}
+.Footer__main {
+    width: 300px;
+    color: #fff;
+    font-weight: 600;
+}
+.Footer__logo {
+    margin-bottom: 50px;
+}
+.Footer__app p,
+.Footer__socials p {
+    margin-bottom: 10px;
+}
+.Footer__app {
+    margin-bottom: 50px;
+}
+.Footer__socials a {
+    margin-right: 5px;
+}
+.Footer__content h4 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.Footer__column .Footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.Footer__list a {
+    color: #fff;
+    font-weight: 500;
+}
+.Footer__column .Partners {
+    margin-top: 20px;
+}
+.Footer__copyright {
+    padding: 50px 0;
+    color: #fff;
+}
+.Footer__copyright .Copyright {
+    margin-bottom: 20px;
+}
+.Credits a {
+    color: #fff;
+    transition: all 0.3s;
+}
+.Credits a:hover {
+    color: #000;
+}
