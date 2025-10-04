@@ -42,12 +42,14 @@ const swiper = new Swiper('.Courses__swiper', {
     1000: {
       slidesPerView: 1.5,
     },
-    400: {
+    300: {
       slidesPerView: 1
     }
   }
 });
 const swiper2 = new Swiper('.Customers__swiper', {
+  slidesPerView: 1,
+
   pagination: {
     el: '.Customers-pagination'
   }

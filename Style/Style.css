@@ -90,9 +90,10 @@ header .Container {
 .Header__right {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
-    height: 100%;
-    min-width: 350px;
+    min-height: 100%;
+    min-width: 300px;
 }
 .Lang {
     padding: 5px 10px;
@@ -137,7 +138,8 @@ header .Container {
     box-sizing: border-box;
     border-radius: 50px;
     transition: all 0.3s;
-    transform: translateX(100%);
+    transform: translateX(200%);
+    z-index: 100;
 }
 .Burger__nav {
     display: flex;
@@ -240,7 +242,7 @@ header .Container {
     border-radius: 35px;
 }
 .Courses__item-title {
-    width: 400px;
+    max-width: 400px;
     color: #fff;
     font-size: 36px;
     margin-bottom: 20px;
@@ -305,11 +307,12 @@ header .Container {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
-    height: 700px;
+    width: 100%;
+    height: 75vh;
     background: #FFC43B;
 }
 .Code__game-code {
+    width: 370px;
     text-align: center;
     color: #979797;
 }
@@ -317,12 +320,13 @@ header .Container {
     margin-bottom: 30px;
 }
 .Code__input {
-    max-width: 100%;
+    width: 100%;
+    max-width: 370px;
     position: relative;
 }
 .Code__input input {
+    width: 100%;
     max-width: 370px;
-    width: 370px;
     height: 50px;
     padding: 0 20px;
     margin-bottom: 10px;
@@ -332,6 +336,7 @@ header .Container {
     font-size: 17px;
     font-weight: 700;
     color: #979797;
+    box-sizing: border-box;
 }
 .Code__game-code svg {
     position: absolute;
@@ -358,17 +363,17 @@ header .Container {
 }
 .Process__item-text {
     font-size: 20px;
-    width: 350px;
+    max-width: 350px;
     padding-block: 50px;
 }
-.Process .Container :nth-child(2) {
+.Process__item--reverse {
     flex-direction: row-reverse;
 }
 
     /* Customers */
 
 .Customers {
-    height: 600px;
+    min-height: 600px;
     background: #3A5AFF;
 }
 .Customers__header .Customers__title {
@@ -380,8 +385,9 @@ header .Container {
 .Customer {
     display: flex;
 
+    width: 100%;
     max-width: 1400px;
-    height: 320px;
+    min-height: 320px;
     margin: 0 auto;
 
     box-sizing: border-box;
@@ -390,13 +396,14 @@ header .Container {
     display: flex;
     align-items: center;
 
-    height: 100%;
+    width: 100%;
     max-width: 700px;
-    width: 700px;
+    min-height: 320px;
     padding: 0 20px;
 
     border-right: 2px solid #fff;
     position: relative;
+    box-sizing: border-box;
 }
 .Customer__bubble {
     display: flex;
@@ -440,10 +447,10 @@ header .Container {
     top: 50px;
     left: 30px;
 }
-.Customer__Review {
+.Customer__review {
+    width: 100%;
     max-width: 700px;
-    width: 700px;
-    height: 100%;
+    min-height: 320px;
     padding: 25px 50px;
 
     border-left: 2px solid #fff;
@@ -470,7 +477,7 @@ header .Container {
     color: #fff;
 }
 .Customers .swiper-wrapper {
-    height: 400px;
+    min-height: 400px;
 }
 .Customers .swiper-pagination-bullet {
     height: 15px;
@@ -485,11 +492,12 @@ header .Container {
     /* Learning */
 
 .Learning {
-    padding-block: 50px;
+    padding-bottom: 50px;
 }
 .Learning__header {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 70px;
     padding: 50px 0;
 }
@@ -506,7 +514,6 @@ header .Container {
 .Learning__content {
     display: flex;
     justify-content: space-around;
-
 }
 .Learning__title {
     max-width: 600px;
@@ -588,13 +595,20 @@ footer {
         flex-direction: column;
         gap: 50px;
     }
+    .Burger-menu {
+        top: 200px;
+    }
+
+    .Process__item {
+        gap: 50px;
+    }
+
     .Learning__title {
         font-size: 50px;
     }
     .Learning__header {
         gap: 20px;
     }
-    
 }
 @media (max-width: 720px) {
     .Welcome {
@@ -608,7 +622,9 @@ footer {
     }
     .Welcome__image {
         position: absolute;
-        z-index: -1;
+    }
+    .Welcome__text {
+        z-index: 5;
     }
     .Welcome__image::after {
         content: "";
@@ -617,14 +633,76 @@ footer {
         background: rgba(255, 255, 255, 0.5);
     }
     
-    .Process__item {
-        gap: 50px;
+    .Customer__review {
+        padding: 10px 20px  ;
     }
 }
 @media (max-width: 650px) {
+    .Process__item,
+    .Process__item--reverse {
+        flex-direction: column;
+    }
+
+    .Customer {
+        flex-direction: column;
+        
+    }
+    .Customer__feedback,
+    .Customer__review {
+        padding: 0 25px;
+        border: 0;
+    }
+
+    .Learning__image {
+        position: absolute;
+    }
+    .Learning__text {
+        z-index: 5;
+        padding: 100px 0;
+        box-sizing: border-box;
+    }
+    .Learning__content {
+        height: 450px;
+    }
+    .Learning__image::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
     .Footer__content {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 50px;
+    }
+}
+@media (max-width: 500px) {
+    .Container {
+        padding-inline: 25px;
+    }
+
+    .Courses__item {
+        padding: 20px;
+    }
+
+    .Customers__swiper {
+        min-height: 700px;
+    }
+    
+    footer .Container {
+        padding-inline: 0;
+    }
+}
+@media (max-width: 400px) {
+    .Header__right {
+        justify-content: flex-end;
+    }
+    .Burger-menu {
+        top: 250px;
+    }
+    .Welcome .Container {
+        margin-top: 170px;
     }
 }
