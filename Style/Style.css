@@ -48,16 +48,11 @@ button {
     color: #fff;
     transition: all 0.3s;
 }
-@media (hover: hover) {
-    .Primary-button:hover {
-        background: #FFC43B;
-    }
+.Primary-button:hover {
+    background: #FFC43B;
 }
-@media (hover: none) {
-    .Primary-button:active {
-        background: #FFC43B;
-    }
-}
+
+
 .Outline-button {
     border: 1px solid #979797;
     color: #979797;
