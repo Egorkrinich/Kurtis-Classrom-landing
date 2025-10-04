@@ -1,6 +1,6 @@
 # Kurtis-Classrom-landing
 
-[Open](https://egorkrinich.github.io/Kurtis-Classrom-landing/)
+[Open](https://egorkrinich.github.io/Kurtis-Classrom-landing-page/)
 
 Technology
 
